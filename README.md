@@ -1,11 +1,35 @@
-Esta consulta realiza um JOIN entre as tabelas de alunos e notas, retornando:
+🎓 SQL Escola Analytics
 
-ID do aluno
-Nome do aluno
-Nota obtida
-🔗 Executar online
+Projeto de análise de dados de uma escola utilizando SQL.
 
--- Relatório de notas por aluno
+📌 Objetivo
+
+Simular um banco de dados educacional e extrair insights sobre desempenho de alunos, disciplinas e professores.
+
+🧱 Estrutura do Banco
+Alunos
+Professores
+Disciplinas
+Turmas
+Notas
+🔍 Principais Análises
+📊 Média de notas por aluno
+
+Permite identificar desempenho geral.
+
+🏆 Ranking de alunos
+
+Identifica os melhores alunos com base na média.
+
+⚠️ Alunos com baixo desempenho
+
+Detecta alunos com média abaixo de 5.
+
+📚 Média por disciplina
+
+Avalia dificuldade das matérias.
+
+
 CREATE TABLE RelatorioNotas AS
 SELECT 
     a.id_aluno,
@@ -14,7 +38,6 @@ SELECT
 FROM TabelaAlunos a
 JOIN TabelaNotas n 
 ON a.id_aluno = n.id_do_aluno;
-
 
 
 [(https://github.com/Brtfreitas/sql-escola-analytics/new/main?filename=README.md)]
